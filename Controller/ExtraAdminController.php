@@ -207,7 +207,7 @@ class ExtraAdminController extends CRUDController
     }
 
     
-    protected function setFormTheme(FormView $formView, $theme)
+    protected function setFormTheme(FormView $formView, ?array $theme = null)
     {
         $twig = $this->get('twig');
 
